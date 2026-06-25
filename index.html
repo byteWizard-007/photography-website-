@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura | Luxury Photography Gallery</title>
+  <meta name="description" content="Award-winning luxury photography showcase website with modern UI and smooth animations.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- FontAwesome included via CSS import -->
+</head>
+<body>
+
+  <!-- Background Shapes -->
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
+
+  <!-- Header -->
+  <header>
+    <nav class="glass">
+      <div class="logo">
+        <span class="text-gradient">Aura</span> Gallery
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="gallery.html" class="btn">Explore</a>
+      </div>
+      <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="hero-content fade-up">
+        <h1 style="margin-bottom: 1rem;">Discover the <span class="text-gradient">Art</span> of Light</h1>
+        <p>Explore an award-winning collection of breathtaking photography. Immerse yourself in a world of visual storytelling where every frame is a masterpiece.</p>
+        <a href="gallery.html" class="btn-primary">Explore Gallery</a>
+      </div>
+    </section>
+
+    <!-- Trending Photos -->
+    <section class="trending">
+      <div class="section-header fade-up">
+        <h2>Trending <span class="text-gradient">Masterpieces</span></h2>
+        <p class="color-text-light">Discover the most acclaimed captures of the week.</p>
+      </div>
+      <div class="trending-grid">
+        <!-- Sample Trending Cards -->
+        <div class="photo-card fade-up">
+          <img src="https://picsum.photos/seed/trend1/600/800" alt="Trending 1" loading="lazy">
+          <div class="photo-overlay">
+            <h4>Ethereal Morning</h4>
+            <p>By Elena Rivers</p>
+          </div>
+        </div>
+        <div class="photo-card fade-up" style="transition-delay: 0.1s;">
+          <img src="https://picsum.photos/seed/trend2/600/800" alt="Trending 2" loading="lazy">
+          <div class="photo-overlay">
+            <h4>Urban Symphony</h4>
+            <p>By Marcus Chen</p>
+          </div>
+        </div>
+        <div class="photo-card fade-up" style="transition-delay: 0.2s;">
+          <img src="https://picsum.photos/seed/trend3/600/800" alt="Trending 3" loading="lazy">
+          <div class="photo-overlay">
+            <h4>Wild Grace</h4>
+            <p>By Sarah Jenkins</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="gallery.html" class="btn-primary" style="padding: 0.75rem 2rem; font-size: 1rem;">View All Trending</a>
+      </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="statistics">
+      <div class="stats-grid">
+        <div class="stat-card glass fade-up">
+          <div class="stat-number text-gradient" data-target="1500">0</div>
+          <div class="stat-label">Total Photos</div>
+        </div>
+        <div class="stat-card glass fade-up" style="transition-delay: 0.1s;">
+          <div class="stat-number text-gradient" data-target="850">0</div>
+          <div class="stat-label">Total Downloads</div>
+        </div>
+        <div class="stat-card glass fade-up" style="transition-delay: 0.2s;">
+          <div class="stat-number text-gradient" data-target="6">0</div>
+          <div class="stat-label">Categories</div>
+        </div>
+        <div class="stat-card glass fade-up" style="transition-delay: 0.3s;">
+          <div class="stat-number text-gradient" data-target="12000">0</div>
+          <div class="stat-label">Active Users</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photographer Spotlight -->
+    <section class="spotlight">
+      <div class="section-header fade-up">
+        <h2>Photographer <span class="text-gradient">Spotlight</span></h2>
+        <p class="color-text-light">Meet the visionaries behind the lens.</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 4rem; align-items: center; justify-content: center;" class="fade-up">
+        <div style="flex: 1; min-width: 300px; max-width: 500px;">
+          <img src="https://picsum.photos/seed/photog/600/600" alt="Photographer" style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+        </div>
+        <div style="flex: 1; min-width: 300px; max-width: 600px;">
+          <h3 style="font-size: 2.5rem; margin-bottom: 1rem;">David <span class="text-gradient">Wellington</span></h3>
+          <p style="font-size: 1.1rem; color: var(--color-text-light); margin-bottom: 2rem;">"Photography is not just about capturing light; it's about capturing a feeling. Every image tells a story that words cannot convey."</p>
+          <p style="margin-bottom: 2rem;">David is an award-winning landscape and nature photographer whose work has been featured in top international magazines. His unique ability to find ethereal beauty in the ordinary makes his collections truly mesmerizing.</p>
+          <a href="gallery.html?author=david" class="btn-primary">View Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="section-header fade-up">
+        <h2>What People <span class="text-gradient">Say</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card glass fade-up">
+          <p class="testimonial-text">"Aura Gallery completely transformed how I find inspiration for my design work. The curation is simply unparalleled."</p>
+          <div class="testimonial-author">
+            <img src="https://picsum.photos/seed/user1/100/100" alt="User 1">
+            <div>
+              <h4 style="margin:0;">Emma Watson</h4>
+              <span style="font-size: 0.9rem; color: var(--color-text-light);">Creative Director</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card glass fade-up" style="transition-delay: 0.1s;">
+          <p class="testimonial-text">"The user experience is buttery smooth. Finding high-quality, niche photography has never been this effortless."</p>
+          <div class="testimonial-author">
+            <img src="https://picsum.photos/seed/user2/100/100" alt="User 2">
+            <div>
+              <h4 style="margin:0;">James Harrison</h4>
+              <span style="font-size: 0.9rem; color: var(--color-text-light);">UX Designer</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card glass fade-up" style="transition-delay: 0.2s;">
+          <p class="testimonial-text">"As a contributor, I love how my work is showcased. The glassmorphism design really makes the photos pop!"</p>
+          <div class="testimonial-author">
+            <img src="https://picsum.photos/seed/user3/100/100" alt="User 3">
+            <div>
+              <h4 style="margin:0;">Sophia Lin</h4>
+              <span style="font-size: 0.9rem; color: var(--color-text-light);">Photographer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom: 1rem;">
+          <span class="text-gradient">Aura</span> Gallery
+        </div>
+        <p style="color: var(--color-text-light);">Curating the world's finest photography with a touch of modern elegance.</p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul class="footer-links">
+          <li><a href="gallery.html">Nature & Wildlife</a></li>
+          <li><a href="gallery.html">Architecture</a></li>
+          <li><a href="gallery.html">Street Photography</a></li>
+          <li><a href="gallery.html">Portraits</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p style="color: var(--color-text-light); margin-bottom: 1rem;">Subscribe to get the latest updates and featured collections.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Your email address">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2026 Aura Gallery. All rights reserved. Designed for Excellence.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura | Collections</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="scrolled">
+    <nav class="glass">
+      <div class="logo"><span class="text-gradient">Aura</span> Gallery</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="collections.html" class="active">Collections</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions"><a href="gallery.html" class="btn">Explore</a></div>
+    </nav>
+  </header>
+
+  <main style="padding-top: 120px; min-height: 80vh; display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <h1 class="fade-up">Curated <span class="text-gradient">Collections</span></h1>
+    <p class="fade-up color-text-light" style="margin-top: 1rem; max-width: 600px;">Explore our hand-picked collections categorized by mood, tone, and subject.</p>
+    
+    <div style="margin-top: 4rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; width: 100%; padding: 0 2rem;">
+      <div class="photo-card fade-up">
+        <img src="https://picsum.photos/seed/col1/800/600" alt="Collection 1">
+        <div class="photo-overlay">
+          <h4>Monochrome Magic</h4>
+          <p>120 Photos</p>
+        </div>
+      </div>
+      <div class="photo-card fade-up" style="transition-delay: 0.1s;">
+        <img src="https://picsum.photos/seed/col2/800/600" alt="Collection 2">
+        <div class="photo-overlay">
+          <h4>Neon Nights</h4>
+          <p>85 Photos</p>
+        </div>
+      </div>
+      <div class="photo-card fade-up" style="transition-delay: 0.2s;">
+        <img src="https://picsum.photos/seed/col3/800/600" alt="Collection 3">
+        <div class="photo-overlay">
+          <h4>Minimalist Living</h4>
+          <p>200 Photos</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

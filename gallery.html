@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura | Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Shapes -->
+  <div class="shape shape-1"></div>
+  <div class="shape shape-3" style="top: 20%; left: 80%;"></div>
+
+  <!-- Header -->
+  <header class="scrolled">
+    <nav class="glass">
+      <div class="logo">
+        <span class="text-gradient">Aura</span> Gallery
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="gallery.html" class="btn">Explore</a>
+      </div>
+      <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Controls -->
+    <section class="gallery-controls">
+      <div class="section-header fade-up" style="margin-bottom: 2rem;">
+        <h1 style="font-size: 3rem;">The <span class="text-gradient">Collection</span></h1>
+        <p>Explore thousands of high-quality images</p>
+      </div>
+      
+      <div class="search-bar fade-up">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Search by title, author, or category...">
+      </div>
+
+      <div class="filters fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+        <button class="filter-btn" data-filter="travel">Travel</button>
+        <button class="filter-btn" data-filter="portrait">Portrait</button>
+        <button class="filter-btn" data-filter="architecture">Architecture</button>
+        <button class="filter-btn" data-filter="street">Street</button>
+      </div>
+    </section>
+
+    <!-- Masonry Grid -->
+    <div class="masonry-grid" id="galleryGrid">
+      <!-- Generated via JS -->
+    </div>
+
+    <!-- Infinite Scroll Loader -->
+    <div class="loader" id="loader"></div>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-prev" onclick="prevImage(event)"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="lightbox-next" onclick="nextImage(event)"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-toolbar">
+        <button class="icon-btn" title="Like"><i class="fa-regular fa-heart"></i></button>
+        <button class="icon-btn" title="Download"><i class="fa-solid fa-download"></i></button>
+        <button class="icon-btn" title="Share"><i class="fa-solid fa-share-nodes"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="copyright" style="border:none; padding-top:0;">
+      &copy; 2026 Aura Gallery. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

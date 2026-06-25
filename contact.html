@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura | Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="scrolled">
+    <nav class="glass">
+      <div class="logo"><span class="text-gradient">Aura</span> Gallery</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-actions"><a href="gallery.html" class="btn">Explore</a></div>
+    </nav>
+  </header>
+
+  <main style="padding-top: 120px; min-height: 80vh; display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <h1 class="fade-up">Get in <span class="text-gradient">Touch</span></h1>
+    <p class="fade-up color-text-light" style="margin-top: 1rem; max-width: 600px;">Have questions about licensing, or want to contribute to the gallery?</p>
+    
+    <div class="glass fade-up" style="margin-top: 3rem; padding: 3rem; border-radius: var(--radius-lg); width: 100%; max-width: 500px; text-align: left;">
+      <form style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <div>
+          <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Name</label>
+          <input type="text" style="width: 100%; padding: 0.8rem; border-radius: var(--radius-md); border: 1px solid var(--color-border); background: rgba(255,255,255,0.5);" placeholder="Your name">
+        </div>
+        <div>
+          <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email</label>
+          <input type="email" style="width: 100%; padding: 0.8rem; border-radius: var(--radius-md); border: 1px solid var(--color-border); background: rgba(255,255,255,0.5);" placeholder="Your email">
+        </div>
+        <div>
+          <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
+          <textarea rows="4" style="width: 100%; padding: 0.8rem; border-radius: var(--radius-md); border: 1px solid var(--color-border); background: rgba(255,255,255,0.5); resize: vertical;" placeholder="Your message"></textarea>
+        </div>
+        <button type="button" class="btn-primary" style="width: 100%; border-radius: var(--radius-md);">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
